@@ -38,6 +38,12 @@ DISTRO_ARM_INSTRUCTION ?= "thumb"
 DISTRO_ARM_INSTRUCTION_armv5 ?= "arm"
 ARM_INSTRUCTION_SET_jd2mr ??= "${DISTRO_ARM_INSTRUCTION}"
 
+DISTRO_FEATURES_append = " systemd"
+DISTRO_FEATURES_BACKFILL_CONSIDERED = "sysvinit"
+VIRTUAL-RUNTIME_initscripts = ""
+VIRTUAL-RUNTIME_syslog = ""
+VIRTUAL-RUNTIME_init_manager = "systemd"
+
 # Log information on images and packages
 INHERIT += "buildhistory"
 BUILDHISTORY_COMMIT = "1"
