@@ -40,7 +40,7 @@ ARM_INSTRUCTION_SET_jd2mr ??= "${DISTRO_ARM_INSTRUCTION}"
 
 DISTRO_FEATURES_append = " systemd"
 VIRTUAL-RUNTIME_init_manager = "systemd"
-DISTRO_FEATURES_BACKFILL_CONSIDERED_append = "sysvinit"
+DISTRO_FEATURES_BACKFILL_CONSIDERED_append = " sysvinit"
 VIRTUAL-RUNTIME_initscripts = ""
 IMX_DEFAULT_DISTRO_FEATURES_append = " systemd"
 
