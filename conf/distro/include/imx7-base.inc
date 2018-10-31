@@ -39,10 +39,10 @@ DISTRO_ARM_INSTRUCTION_armv5 ?= "arm"
 ARM_INSTRUCTION_SET_jd2mr ??= "${DISTRO_ARM_INSTRUCTION}"
 
 DISTRO_FEATURES_append = " systemd"
-DISTRO_FEATURES_BACKFILL_CONSIDERED_append = " sysvinit"
-VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
-VIRTUAL-RUNTIME_syslog = ""
 VIRTUAL-RUNTIME_init_manager = "systemd"
+DISTRO_FEATURES_BACKFILL_CONSIDERED = "sysvinit"
+VIRTUAL-RUNTIME_initscripts = ""
+IMX_DEFAULT_DISTRO_FEATURES_append = " systemd"
 
 # Log information on images and packages
 INHERIT += "buildhistory"
