@@ -38,7 +38,7 @@ DISTRO_ARM_INSTRUCTION ?= "thumb"
 DISTRO_ARM_INSTRUCTION_armv5 ?= "arm"
 ARM_INSTRUCTION_SET_jd2mr ??= "${DISTRO_ARM_INSTRUCTION}"
 
-DISTRO_FEATURES_append = " systemd"
+DISTRO_FEATURES_append = " systemd usrmerge"
 VIRTUAL-RUNTIME_init_manager = "systemd"
 DISTRO_FEATURES_BACKFILL_CONSIDERED_append = " sysvinit"
 VIRTUAL-RUNTIME_initscripts = ""
